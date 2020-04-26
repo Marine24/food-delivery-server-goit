@@ -1,11 +1,9 @@
-const mainRoute = require("./defaultRoute/mainrouter");
-const products = require("./products/products");
-const signUp = require("./signUp/user");
+const productsRoute = require("./products");
+const defaultRoute = require("./defaultRoute/mainrouter");
 
 const router = {
-  "/signUp": signUp,
-  "/products": products,
-  default: mainRoute
+  "/products": productsRoute,
+  default: defaultRoute,
 };
 
 module.exports = router;
